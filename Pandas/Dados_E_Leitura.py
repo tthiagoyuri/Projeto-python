@@ -11,6 +11,7 @@ class Dados_Leitura:
         try:
             tabela = pd.read_excel(self.file_path)
         except FileNotFoundError:
+
             print(f"Arquivo '{self.file_path}' não encontrado. Verifique o caminho e tente novamente.")
             exit()
         except Exception as e:
